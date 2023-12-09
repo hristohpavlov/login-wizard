@@ -61,12 +61,28 @@ const VerificationCardComponent  = (props: VerificationComponentProps) => {
     if(!isCodeValid && code){
       if(!(/^\d+$/.test(code))){
         setErrorCode('The code must consist only of numbers');
+        if(props.type === 'mobile'){
+          logLoginAttempt(null, formattedNum, code, 'fail')
+        }else {
+          logLoginAttempt(email, null, code, 'fail')
+        }
+        
       }else{
         setErrorCode('The code must consist of 6 numbers');
+        if(props.type === 'mobile'){
+          logLoginAttempt(null, formattedNum, code, 'fail')
+        }else {
+          logLoginAttempt(email, null, code, 'fail')
+        }
       }
     }
     if(!code){
       setErrorCode('Please enter a verification code');
+      if(props.type === 'mobile'){
+        logLoginAttempt(null, formattedNum, null, 'fail')
+      }else {
+        logLoginAttempt(email, null, null, 'fail')
+      }
     }
     try {
       if (code && isCodeValid) {

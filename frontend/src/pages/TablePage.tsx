@@ -32,7 +32,10 @@ const TablePage = () => {
             headers: {
                 Authorization: `Bearer ${location.state.idToken}`,
             },});
-            setLoginAttempts(response.data);
+            const sortedAttempts = response.data.sort(
+                (a:any, b:any) => b.timestamp._seconds - a.timestamp._seconds
+              );
+            setLoginAttempts(sortedAttempts);
         } catch (error) {
             console.error('Error fetching login attempts:', error);
         }
