@@ -1,0 +1,113 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .continue-button-modal{
+    width: 345px;
+    height: 45px;
+    flex-shrink: 0;
+    background-color: #001B36;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px; 
+    font-style: normal;
+    font-weight: 500;
+    line-height: 0px; 
+    letter-spacing: 0.89px;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.modal-field-text{
+  max-width: 110px;
+  height:20px;
+  color: #000;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.39px;
+  text-transform: uppercase;
+  padding-bottom: 8px;
+  text-align: left;
+  padding-left: 30px;
+}
+.modal-input-field{
+  width: 344px;
+  height: 45px;
+  background-color: #FFF;
+  border: 1px solid #828282;
+  border-radius: 5px;
+  padding: 0;
+}
+.modal-input-field::placeholder{
+  color: var(--Gray-3, #828282);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.modal-input-field:not([value=""]){
+  color: var(--Gray-3, #828282);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 17px;
+  width: 327px;
+}
+
+.modal-input-field[value=""]{
+  padding-left: 17px;
+  width: 327px;
+}
+.field-one{
+  margin-bottom: 30px;
+}
+.signout-button{
+  width: 345px;
+  height: 45px;
+  flex-shrink: 0;
+  background-color: #FEBD2C;
+  color: var(--Gray-1, #333);
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px; 
+  font-style: normal;
+  font-weight: 500;
+  line-height: 0px; /* 0% */
+  letter-spacing: 0.89px;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+

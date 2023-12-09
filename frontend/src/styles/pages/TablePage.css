@@ -1,0 +1,133 @@
+.table-verification-container {
+    max-width: 495px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 23px;
+}
+
+.table-landing-title {
+    width: 100%;
+    height: 34px;
+    margin: auto;
+    text-align: center;
+    color: var(--Gray-1, #333);
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140.625%;
+}
+
+.continue-button{
+    width: 345px;
+    height: 45px;
+    flex-shrink: 0;
+    background-color: #001B36;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px; 
+    font-style: normal;
+    font-weight: 500;
+    line-height: 0px;
+    letter-spacing: 0.89px;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.table-content-wrapper {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    max-width: 495px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.table-content-wrapper table {
+    width: 87%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-spacing: unset;
+}
+
+.table-content-wrapper th,
+.table-content-wrapper td {
+    padding: 10px;
+    text-align: left;
+}
+
+.table-content-wrapper td {
+    border-left: 2px solid white;
+}
+
+.table-content-wrapper th {
+    background-color: #001B36;
+    color: #FFFFFF;
+}
+
+.table-content-wrapper tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table-content-wrapper button.icon-button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+}
+
+.table-content-wrapper button.icon-button img {
+    width: 16px;
+    height: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .continue-button{
+        width: 310px;
+        height: 45px;
+        margin-bottom: 15px;
+    }
+
+    .table-content-wrapper th,
+    .table-content-wrapper td {
+        padding: 1px;
+        border: none;
+        text-align: left;
+    }
+
+    .table-content-wrapper td {
+        border-left: 1px solid white;
+    }
+
+    .table-verification-container {
+        margin-top: 57px;
+        width: 100%;
+        height: auto;
+    }
+
+    .table-landing-title {
+        width: 100%;
+        color: #000;
+        font-family: Inter;
+        font-size: 21px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140.625%;
+    }
+
+    .table-content-wrapper {
+        width: 100%;
+        height: auto;
+    }
+}

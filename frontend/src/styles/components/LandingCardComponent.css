@@ -1,0 +1,121 @@
+.card-container{
+    max-width: 495px;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+    width: 495px;
+    height: 193px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.first-card{
+    margin-top:25px;
+}
+
+.second-card{
+    margin-top: 28px;
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    width: 395px;
+    height: 93px;
+}
+
+.icon{
+    width: 75px;
+    height: 75px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 38px;
+}
+
+.logo{
+    width: 75px;
+    height: 75px;
+}
+
+.text-button{
+    max-width: 258px;
+    height: 32px;
+    padding-bottom: 16px;
+    color: var(--Gray-1, #333);
+    font-family: Inter;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.forward-button{
+    cursor: pointer;
+    width: 274px;
+    height: 45px;
+    flex-shrink: 0;
+    background-color: #001B36;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 0px;
+    letter-spacing: 0.89px;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .card-container {
+      max-width: 311px;
+      height: 128px;
+    }
+
+    .icon{
+        height: 47px;
+        width: 47px;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 17px;
+    }
+
+    .logo{
+        height: 47px;
+        width: 47px;
+    }
+
+    .card{
+        width: 261px;
+    }
+
+    .text-button{
+        padding-bottom: 10px;
+        max-width:134px;
+        color: var(--Gray-1, #333);
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+    }
+
+    .forward-button{
+        width: 179px;
+        height: 32px;
+        color: var(--White-, #FFF);
+        text-align: center;
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 0px;
+        letter-spacing: 0.89px;
+        text-transform: uppercase;
+    }
+}
